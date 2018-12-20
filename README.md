@@ -29,9 +29,11 @@ other means of managing your cluster, first run the canary in the cluster as you
 HTTP based services. For instance:
 
 Create a simple deployment in your cluster:
+
   ```kubectl run k8s-canary-test --image=netbucket/k8s-canary --port 80```
 
 Expose the deployment:
+
  ```kubectl expose deployment k8s-canary-test  --type=NodePort --name=k8s-canary-test```
 
 If all goes well, your canary deployment will be available and accessible via *http://public-ip:node-port/* URL, where *public-ip* is the public IP address of your node, and *node-port* ss the NodePort value for your service.Then, using *cURL*, or pointing a Chrome browser to http://public-ip:node-port/foo/bar will show the following:
@@ -65,5 +67,9 @@ If all goes well, your canary deployment will be available and accessible via *h
     }
 }
 ```
-   
+
+When using the **netbucket/k8s-canary-https**, remember to expose port 443, not port 80:
+
+  ```kubectl run k8s-canary-test --image=netbucket/k8s-canary-https --port 443```
+
 Happy debugging!

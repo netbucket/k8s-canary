@@ -22,7 +22,7 @@ HTTP endpoint, supports HTTP 1.1 only.
 whereas **netbucket/k8s-canary-https** container will start the HTTPS listener on port 443. 
 (Being convential is a virtue in the world of distributed systems.)
 
-### How to use these images for testing
+## How to use these images for testing
 Assuming that your new Kubernetes cluster is ready, and you can connect to it via *kubectl* or any
 other means of managing your cluster, first run the canary in the cluster as you would any of your 
 HTTP based services. For instance:

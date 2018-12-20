@@ -1,0 +1,10 @@
+# A compact HTTP server instance suitable for testing a Kubernetes cluster.
+# This image contains a standalone Web server, with a self-signed TLS certificate,
+# that will respond back to the HTTP client with a JSON dump of the client request.
+# Both HTTP/2 and HTTP 1.1 protocols are supported
+FROM netbucket/httpr
+
+EXPOSE 443
+
+ENTRYPOINT ["/httpr", "log", "-e", "-p", "-t"]
+CMD ["-s=:443"]

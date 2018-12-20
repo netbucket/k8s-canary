@@ -13,13 +13,13 @@ These publicly available images will:
  
  
 ## Which image to use?
-The only difference between **netbnucket/k8s-canary** and **netbucket/k8s-canary-https** is the fact that 
+The only difference between **netbucket/k8s-canary** and **netbucket/k8s-canary-https** is the fact that 
 the latter supports HTTPS/TLS (with a self-signed, auto-generated TLS certificate) and supports HTTP/2. 
-Plaintext over HTTP/2 is considered in bad taste, therefore, **netbnucket/k8s-canary** being a plaintext
+Plaintext over HTTP/2 is considered in bad taste, therefore, **netbucket/k8s-canary** being a plaintext
 HTTP endpoint, supports HTTP 1.1 only.
 
-**netbnucket/k8s-canary** container will start the HTTP listener on port 80, 
-whereas **netbnucket/k8s-canary-https** container will start the HTTPS listener on port 443. 
+**netbucket/k8s-canary** container will start the HTTP listener on port 80, 
+whereas **netbucket/k8s-canary-https** container will start the HTTPS listener on port 443. 
 (Being convential is a virtue in the world of distributed systems.)
 
 ### How to use these images for testing

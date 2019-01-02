@@ -62,7 +62,7 @@ If all goes well, your canary deployment will be available and accessible via *h
             "1"
         ],
         "User-Agent": [
-            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+            "Mozilla/5.0 (....) AppleWebKit/... (KHTML, like Gecko) Chrome/... Safari/..."
         ]
     }
 }

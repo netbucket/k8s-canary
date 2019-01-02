@@ -38,7 +38,7 @@ Expose the deployment:
 
 If all goes well, your canary deployment will be available and accessible via *http://public-ip:node-port/* URL, where *public-ip* is the public IP address of your node, and *node-port* ss the NodePort value for your service.Then, using *cURL*, or pointing a Chrome browser to http://public-ip:node-port/foo/bar will show the following:
 
-```json
+```JavaScript
 {
     "remoteAddr": "XXX.XX.X.X:51832",
     "host": "YYY.YYY.YY.Y:8083",
